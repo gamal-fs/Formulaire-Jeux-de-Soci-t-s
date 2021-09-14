@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  color: lightsalmon;
+  background-color: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  }
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.little {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsteelblue;
+  font-size: 1.3rem;
+}
+
+form {
+  width: 40%;
+}
+
+fieldset {
+  padding: 15px;
+  border: 1px solid lightcyan;
+  background-color: rgba(225, 233, 255, 0.25);
+}
+
+fieldset legend {
+  padding: 5px;
+  color: lightslategray;
+  font-size: 1em;
+  font-style: italic;
+}
+
+input {
+  padding: 5px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.validation {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+textarea {
+  padding: 5px;
+  resize: none;
+  width: 97%;
+  font-size: 1.2rem;
+}
+
+.inline-input {
+  display: block;
+  font-size: 1.2rem;
+}
+
+label {
+  margin-top: 5px;
+}
+
+.parrains {
+  font-size: 1.2rem;
+}
+
+.taille {
+  width: 97%;
+}
+
+

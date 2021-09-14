@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inscription Jeux de société</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue chez " On s'amuse comme des fous! "</h1>
+    </header>
+    <main>
+      <h2>
+        Nous vous invitons à vous inscrire en complétant le formulaire
+        ci-dessous
+      </h2>
+      <p class="italic little conditions">
+        Les champs avec une <span class="red bold">*</span> sont
+        obligatoires !
+      </p>
+
+      <form action="inscription.php" method="get">
+        <fieldset class="connexion">
+          <legend class="bold">Vos identifiants de connexion</legend>
+          <label for="mail">Adresse mail<span class="red bold">*</span></label>
+          <input
+            class="inline-input taille"
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="votre mail @ de connexion"
+            required
+          />
+
+          <label for="password"
+            >Mot de passe<span class="red bold">*</span></label
+          >
+          <input
+            class="inline-input taille"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="votre mot de passe"
+            required
+          />
+        </fieldset>
+
+        <fieldset class="vous">
+          <legend class="bold">Civililté</legend>
+          <label for="photo"
+            >Votre photo de profil<span class="red bold">*</span></label
+          >
+          <input
+            class="bouton inline-input"
+            type="file"
+            id="photo"
+            name="photo"
+            accept="image/jpg, image/png"
+            required
+          />
+          <div>
+            <input type="radio" id="Mr" name="civilite" value="civilite" checked />
+            <label for="Mr">Monsieur</label>
+          </div>
+          <div>
+            <input type="radio" id="Mme" name="civilite" value="civilite" />
+            <label for="Mme">Madame</label>
+          </div>
+          <div>
+            <input type="radio" id="Mme" name="civilite" value="civilite" />
+            <label for="Mlle">Mademoiselle</label>
+          </div><br>
+          <label for="firstname">Nom<span class="red bold">*</span></label>
+          <input
+            class="inline-input taille"
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Votre nom"
+            required
+          />
+
+          <label for="name">Prénom<span class="red bold">*</span></label>
+          <input
+            class="inline-input taille"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Votre prénom"
+            required
+          />
+
+          <label for="birthday">Votre date de naissance</label>
+          <input class="inline-input taille" type="date" id="birthday" name="birthday" />
+        </fieldset>
+
+        <fieldset>
+          <legend class="bold">Vos coordonnées</legend>
+          <label for="phone">Portable</label>
+          <input
+            class="inline-input taille"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="06 00 00 00 00 "
+          />
+
+          <label for="city">Ville</label>
+          <input class="inline-input taille" type="text" id="city" name="city" placeholder="Votre ville" />
+
+          <label for="cp">CP</label>
+          <input
+            class="inline-input taille"
+            type="text"
+            id="cp"
+            name="cp"
+            placeholder="Votre code postal"
+          />
+
+          <label for="adress">Adresse</label>
+          <textarea
+            class="inline-input"
+            name="adress"
+            id="adress"
+            
+            rows="2"
+            placeholder="Votre adresse"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend class="bold">Jeux de Société</legend>
+          <input type="checkbox" id="tarot" name="game" />
+          <label for="tarot">Tarot</label><br>
+
+          <input type="checkbox" id="echecs" name="game" />
+          <label for="echecs">Échecs</label><br>
+
+          <input type="checkbox" id="dames" name="game" />
+          <label for="dames">Dames</label><br>
+
+          <input type="checkbox" id="bataille-navale" name="game" />
+          <label for="bataille-navale">Bataille navale</label><br>
+
+          <input type="checkbox" id="petits-chevaux" name="game" />
+          <label for="petits-chevaux">Petits chevaux</label><br>
+
+          <input type="checkbox" id="poker" name="game" />
+          <label for="poker">Poker</label>
+        </fieldset>
+
+        <fieldset>
+          <legend class="bold">Parrainage</legend>
+          <label for="sponsor" class="inline-input">Votre parrain</label>
+          <select name="sponsor" id="sponsor"class="parrains">
+            <option value="">selectionnez votre parrain</option>
+            <option value="Laure">Laure</option>
+            <option value="Adam">Adam</option>
+            <option value="Chloé">Chloé</option>
+            <option value="Jules">Jules</option>
+            <option value="Camille">Camille</option>
+            <option value="Raphaël">Raphaël</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend class="bold">Prenez de nos nouvelles!</legend>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter" class="italic">j'accepte de recevoir la newsletter du club !</label>
+        </fieldset>
+        <button class="validation" type="submit">Je valide mon inscription</button>
+      </form>
+    </main>
+  </body>
+</html>
